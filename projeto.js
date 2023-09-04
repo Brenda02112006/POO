@@ -1,5 +1,3 @@
-// Agenda de Contatos -
-
 // Criação da classe que representa um contato
 class Contato {
     constructor(nome, telefone, email) {
@@ -9,7 +7,7 @@ class Contato {
     }
   
     // Um método -  que mostra  os detalhes do contato
-    exibirDetalhes() {
+    mostrarDetalhes() {
       console.log(`Nome: ${this.nome}`);
       console.log(`Telefone: ${this.telefone}`);
       console.log(`E-mail: ${this.email}`);
@@ -32,7 +30,7 @@ class Contato {
     listarContatos() {
       this.contatos.forEach((contato, index) => {
         console.log(`Contato ${index + 1}:`);
-        contato.exibirDetalhes();
+        contato.mostrarDetalhes();
       });
     }
   
@@ -64,7 +62,7 @@ class Contato {
       const resultados = this.contatos.filter(contato => contato.nome.toLowerCase() === nome.toLowerCase());
       if (resultados.length > 0) {
         console.log('Abaixo, os contatos encontrados:');
-        resultados.forEach(contato => contato.exibirDetalhes());
+        resultados.forEach(contato => contato.mostrarDetalhes());
       } else {
         console.log('Não existe contato com este nome, reveja-o.');
       }
