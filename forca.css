@@ -1,0 +1,39 @@
+body {
+    background-image: linear-gradient(to right , rgb(133, 11, 233),rgb(0, 0, 0));
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  h1{
+    color: aliceblue;
+  }
+  
+  #game-container {
+    grid-template-columns: 20px;
+    grid-template-rows: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+  } 
+  
+  #word-display {
+    color: aliceblue;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  #feedback {
+    color: aliceblue;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  
+  #incorrect-letters {
+    color: red;
+    margin: 10px 0;
+  }
