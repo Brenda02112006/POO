@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="forca.css">
+  <title>Jogo da Forca</title>
+</head>
+<body>
+  <div id="game-container" class="container">
+    <h1 class="display-4">Jogo da Forca</h1>
+    <div id="word-display"></div>
+    <p id="feedback"></p>
+    <p id="incorrect-letters"></p>
+    <div class="input-group mb-3">
+      <input type="text" id="letter-input" maxlength="1" class="form-control">
+      <button onclick="tentarLetra()" class="btn btn-primary">Tentar Letra</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="forca.js"></script>
+</body>
+</html>
