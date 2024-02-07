@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #c71010;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-top: 5;
+  }
+  
+  #palavra {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #masTentativas {
+    margin-bottom: 20px;
+  }
+  
+  select, button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #resultado {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
