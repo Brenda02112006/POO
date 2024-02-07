@@ -3,23 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="forca.css">
-  <title>Jogo da Forca</title>
+  <title>Adivinhação de Palavras Estilizado</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="game-container" class="container">
-    <h1 class="display-4">Jogo da Forca</h1>
-    <div id="word-display"></div>
-    <p id="feedback"></p>
-    <p id="incorrect-letters"></p>
-    <div class="input-group mb-3">
-      <input type="text" id="letter-input" maxlength="1" class="form-control">
-      <button onclick="tentarLetra()" class="btn btn-primary">Tentar Letra</button>
-    </div>
+  <div class="container">
+    <h1>ADIVINHAÇÃO DE PALAVRAS</h1>
+    <div id="palavra"></div>
+    <div id="tentativas"></div>
+    <select id="letraSelect">
+      <option value="" selected disabled>Selecione uma letra</option>
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+      <option value="d">D</option>
+      <option value="e">E</option>
+      <option value="f">F</option>
+      <option value="g">G</option>
+      <option value="h">H</option>
+      <option value="i">I</option>
+      <option value="j">J</option>
+      <option value="k">K</option>
+      <option value="l">L</option>
+      <option value="m">M</option>
+      <option value="n">N</option>
+      <option value="o">O</option>
+      <option value="p">P</option>
+      <option value="q">Q</option>
+      <option value="r">R</option>
+      <option value="s">S</option>
+      <option value="t">T</option>
+      <option value="u">U</option>
+      <option value="v">V</option>
+      <option value="w">W</option>
+      <option value="x">X</option>
+      <option value="y">Y</option>
+      <option value="z">Z</option>
+    </select>
+    <button id="adivinharBtn">Adivinhar</button>
+    <div id="resultado"></div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="forca.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
